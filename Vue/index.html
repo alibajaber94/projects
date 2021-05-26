@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Vue Js</title>
+  </head>
+  <body>
+    <div id="Quran-app">
+      {{ message }}
+
+      <input
+        id="search_term"
+        type="text"
+        v-model="location"
+        placeholder="search..."
+      />
+
+      <p>Welcome {{ 'Mr ' + name}}</p>
+      <p>age : {{ age + ' years' }}</p>
+      <p>skills: {{ `${skills[0]} - ${skills[1]} - ${skills[2]}`}}</p>
+      <p>status: {{ isSubscribe ? 'Subscribed' : 'Unsubscribed' }}</p>
+      <ul>
+        <b> Passed Test </b>
+        <br />
+        <li v-for="(test, index) in passedTest">
+          {{index + 1}} {{ test.testName }} => {{ test.testResult }}
+        </li>
+      </ul>
+      <p>{{ yourAgeInDays() }}</p>
+      <button @click="getDate">Get Date</button>
+      <p>{{ date }}</p>
+      <a :href=" imgURL ">
+        <img
+          v-bind:src=" imgSrc "
+          :alt="  imgAltText "
+          v-bind:title="imgAltText"
+          width="100px"
+          height="100px"
+        />
+      </a>
+      <p>{{ counter }}</p>
+      <button v-on:click="counter ++">increase</button>
+      <input placeholder="edit me" type="text" v-model="vModelTest" />
+      <span>write something {{ vModelTest }}</span>
+      <next-page :age="age"></next-page>
+      <sound-play></sound-play>
+      <highlight-text></highlight-text>
+    </div>
+    <script src="js/vue.js"></script>
+    <script>
+      // Local Component
+      let SoundPlay = {
+        data: function () {
+          return {
+            tName: 'Taleen',
+            tAge: 5,
+          };
+        },
+        template: ` <h1 style='color:deeppink'> {{ tName }} =>> {{ tAge }} :) </h1> `,
+      };
+      let HighlightText = {
+        data: function () {
+          return {
+            textSelected: 'Surah Selected',
+          };
+        },
+        template: ` <p style = ' background-color:gray ' > {{ textSelected }} </p> `,
+      };
+      // Global Component
+      Vue.component('next-page', {
+        data: function () {
+          return {
+            surahName: 'Surah Al-Mulk',
+            pageNum: 30,
+          };
+        },
+        props: ['age'],
+        template: ` <p> {{surahName}}  page no {{pageNum}} age {{ age }}</p>
+          <button @click='pageNum++'> next page </button>`,
+      });
+      new Vue({
+        el: '#Quran-app',
+        data: {
+          message: 'Hello from Vue js',
+          name: 'Ali Ahmed',
+          age: 27,
+          skills: ['HTML', 'CSS', 'JS'],
+          isSubscribe: true,
+          date: '',
+          imgSrc: 'imgs/04.jpg',
+          imgAltText: 'Alternative Text',
+          imgURL: 'https://www.google.com.sa/',
+          counter: 0,
+          vModelTest: '"/ i\'m v-model \\"',
+          passedTest: [
+            { testName: 'Math 1', testResult: '55%' },
+            { testName: 'Math 2', testResult: '70%' },
+            { testName: 'Math 3', testResult: '85%' },
+            { testName: 'Math 4', testResult: '90%' },
+          ],
+        },
+        components: {
+          'sound-play': SoundPlay,
+          'highlight-text': HighlightText,
+        },
+        methods: {
+          yourAgeInDays: function () {
+            return ` Your Age In Days: ${this.age * 365}`;
+          },
+          getDate: function () {
+            let date = new Date();
+            this.date =
+              date.getDate() +
+              '/' +
+              (date.getMonth() + 1) +
+              '/' +
+              date.getFullYear();
+          },
+        },
+      });
+    </script>
+    <script>
+      function activatePlacesSearch() {
+        let input = document.getElementById('search_term');
+        let autocomplete = new google.map.places.Autocomplete(input);
+      }
+    </script>
+    <script
+      async
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAKPVy6uNT9eu8vSyXBhUKpA84BJjhp_cI&libraries=places&callback=activatePlacesSearch"
+    ></script>
+  </body>
+</html>

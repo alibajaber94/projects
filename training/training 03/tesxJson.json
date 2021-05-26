@@ -1,0 +1,34 @@
+{
+    "username": "Elzero" ,
+    "country" :" Egypt " ,
+    "skills" :[
+      [
+      "HTML" ,
+      "Pugjs",
+      "Haml "
+      ],
+      [
+      " css" ,
+      "Sass",
+      "Less"
+      ],
+      [
+      "Js",
+      "Babel"
+      ]
+    ],
+    "skillsProgress" : [
+      {
+        "Html":"60%",
+        "Pugjs":"80%"
+      },
+      {
+        "Css":"40%",
+        "Sass":"30%"
+      },
+      {
+        "Js":"90%",
+      "Babel":"100%"
+      }
+    ]
+  }

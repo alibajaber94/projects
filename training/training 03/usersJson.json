@@ -1,0 +1,27 @@
+[
+    {
+    "username": "Elzero" ,
+    "country" :" Egypt " ,
+    "Age" : 36
+    },
+    {
+        "username": "Ali" ,
+        "country" :" Yemen " ,
+        "Age" : 20
+    },
+    {
+        "username": "omar" ,
+        "country" :" UK " ,
+        "Age" : 46
+    },
+    {
+        "username": "Ahmed" ,
+        "country" :" KSA " ,
+        "Age" : 33
+    },
+    {
+        "username": "Mohd" ,
+        "country" :" USA " ,
+        "Age" : 22
+    }
+]

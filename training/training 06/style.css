@@ -1,0 +1,119 @@
+* {
+  box-sizing: border-box;
+}
+.main {
+  min-width: 300px;
+  min-height: 300px;
+  margin: 2px auto;
+  align-items: center;
+  border: black solid;
+  display: inline-table;
+}
+ul {
+  list-style: none;
+  margin-bottom: 20px;
+  text-align: center;
+}
+ul li {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  display: inline-block;
+}
+ul li:first-child {
+  background-color: tomato;
+}
+ul li:nth-child(2) {
+  background-color: yellowgreen;
+}
+ul li:nth-child(3) {
+  background-color: deepskyblue;
+}
+ul li:nth-child(4) {
+  background-color: darkgray;
+}
+ul li:nth-child(5) {
+  background-color: chocolate;
+}
+.red .main {
+  background: tomato;
+}
+.green .main {
+  background: yellowgreen;
+}
+.blue .main {
+  background: deepskyblue;
+}
+.gray .main {
+  background: darkgray;
+}
+.orange .main {
+  background: chocolate;
+}
+
+/* #Roman {
+  text-transform: uppercase;
+} */
+
+#textArea {
+  display: inline;
+}
+
+#count {
+  display: inline;
+}
+
+.zero {
+  color: red;
+}
+
+.field-icon {
+  position: relative;
+  float: right;
+  right: 114px;
+  bottom: -9px;
+  z-index: 2;
+}
+
+.one {
+  background-color: seashell;
+}
+
+.two {
+  background-color: silver;
+}
+
+.three {
+  background-color: tan;
+}
+
+.four {
+  background-color: whitesmoke;
+}
+
+div:nth-of-type(4) {
+  width: 300px;
+}
+
+div:nth-of-type(4) input,
+textarea {
+  display: block;
+}
+
+#clock {
+  position: fixed;
+  background-color: saddlebrown;
+  top: 5px;
+}
+.keyGenNum {
+  background-color: rosybrown;
+  display: block;
+  margin: 12px auto;
+  padding: 1px;
+}
+
+body p:nth-child(2) {
+  right: 15px;
+  position: fixed;
+  background-color: cornsilk;
+}

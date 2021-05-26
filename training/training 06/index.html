@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="../fontawesome-free-5.15.1-web\css\all.min.css"
+    />
+
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.min.js"
+      integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!--  start  -->
+    <p id="clock">12</p>
+    <p id="timer"></p>
+    <ul>
+      <li data-color="red"></li>
+      <li data-color="green"></li>
+      <li data-color="blue"></li>
+      <li data-color="gray"></li>
+      <li data-color="orange"></li>
+    </ul>
+
+    <!-- first Div start -->
+
+    <div id="mainContainer" class="main">
+      <h4 class="question"></h4>
+      <h5>
+        Example : <br /><br />
+        Input: x = 123 Output: 321
+      </h5>
+      <h5>my output:</h5>
+      <p class="output" id="output"></p>
+      <textarea
+        name="message"
+        id="textArea"
+        placeholder="Text Here"
+        maxlength="50"
+        cols="30"
+        rows="5"
+      ></textarea>
+      <p id="count"></p>
+    </div>
+
+    <!-- second Div start -->
+
+    <div id="mainContainer" class="main">
+      <h4 class="question">Palindrome Number</h4>
+      <h5>
+        Example : <br /><br />
+        Input: x = 11211 Output: true
+      </h5>
+      <h5>my output:</h5>
+      <p class="output" id="output">ooooooooooooooo</p>
+      <div class="col-nd-2">
+        <input
+          type="password"
+          class="form-control"
+          id="password"
+          placeholder="password"
+        />
+        <span
+          toggle="#password-field"
+          class="fa fa-fw fa-eye fa-xs field-icon toggle-password"
+          id="eye"
+        ></span>
+      </div>
+    </div>
+
+    <!-- third Div start -->
+
+    <div id="mainContainer" class="main">
+      <h4 class="question">Roman to Integer</h4>
+      <h5>
+        Example : <br /><br />
+        Input: s = "LVIII" <br /><br />
+        Output: 58
+      </h5>
+      Enter Roman Number <br />
+      <input
+        type="text"
+        name="Roman"
+        id="Roman"
+        placeholder="Enter Roman Number"
+        maxlength="6"
+        onkeypress="return AvoidSpace(event)"
+      />
+      <button onclick="romanToInt(document.getElementById('Roman').value)">
+        Convert
+      </button>
+      <h5>my output:</h5>
+      <p class="output" id="output">ooooooooooooooo</p>
+    </div>
+
+    <!-- fourth Div start -->
+
+    <div id="mainContainer" class="main">
+      <label for="title">title</label>
+      <input type="text" id="title" />
+      <label for="description">description</label>
+      <textarea
+        name="description"
+        id="description"
+        cols="30"
+        rows="10"
+      ></textarea>
+
+      <h2></h2>
+      <p></p>
+    </div>
+
+    <!-- fifth Div start -->
+
+    <div id="mainContainer" class="main">
+      <button id="keyGen">keyGen</button>
+    </div>
+
+    <!--  End  -->
+    <script src="script.js"></script>
+    <script src="plugins.js"></script>
+  </body>
+</html>
+
+<!--
+    <input type="text" onkeyup="
+  var start = this.selectionStart;
+  var end = this.selectionEnd;
+  this.value = this.value.toUpperCase();
+  this.setSelectionRange(start, end);
+">
+
+-->

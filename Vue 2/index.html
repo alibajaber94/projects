@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Vue Js</title>
+  </head>
+  <body>
+    <div id="vat-app">
+      <input type="text" v-model="findLang" />
+      <ul>
+        <li v-for="lang in findLanguages">{{ lang }}</li>
+      </ul>
+      <input type="text" v-model="findVAT" />
+      <p>
+        {{ isNaN(calcVAT) ? '...' : calcVAT}} {{ findVAT > 0 ? 'include VAT' :
+        '' }}
+      </p>
+      <label>Egyptian Pound</label>
+      <input type="text" v-model="eg" />
+      <br />
+      <label>Saudi Riyal</label>
+      <input type="text" v-model="sa" />
+    </div>
+
+    <script src="js/vue.js"></script>
+    <script>
+      var vm = new Vue({
+        el: '#vat-app',
+        data: {
+          eg: 0,
+          sa: 0,
+          findVAT: '0',
+
+          //
+          //find languages
+          findLang: '',
+          languages: [
+            'HTML',
+            'CSS',
+            'PHP',
+            'Sass',
+            'JavaScript',
+            'MySQL',
+            'Java',
+            'C#',
+            'Python',
+          ],
+        },
+        computed: {
+          findLanguages: function () {
+            let filtering = new RegExp(this.findLang, 'i');
+            return this.languages.filter((el) => el.match(filtering));
+          },
+          calcVAT: function () {
+            const rateVAT = 0.15;
+            let r = parseInt(this.findVAT);
+            return r * rateVAT + r;
+          },
+        },
+        watch: {
+          eg: function (v) {
+            this.sa = v / 5;
+            console.log('eg');
+          },
+          sa: function (v) {
+            this.eg = v * 5;
+            console.log('sa');
+          },
+        },
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,8 @@
+#mainContainer {
+    background: chocolate;
+    height: 400px;
+    width: 400px;
+    margin: 50px auto ;
+    align-items: center;
+    border: black solid;
+}

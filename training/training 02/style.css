@@ -1,0 +1,24 @@
+#mainContainer {
+    background: chocolate;
+    height: 400px;
+    width: 400px;
+    margin: 50px auto ;
+    align-items: center;
+    border: black solid;
+}
+
+.info{
+    margin: 50px auto ;
+    align-items: center;
+}
+
+.info div{
+    display: inline-block;
+    border: gold solid;
+}
+
+.info p{
+    display: inline-block;
+    border:aqua solid;
+
+}

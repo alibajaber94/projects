@@ -1,0 +1,429 @@
+/* start ... */
+/* end ... */
+
+/* Mobile Size  */
+@media (max-width: 767px) {
+}
+
+/* Small Size */
+@media (min-width: 768px) and (max-width: 991px) {
+}
+
+/* Medium Size */
+@media (min-width: 992px) and (max-width: 1199px) {
+}
+
+/* Large Size */
+@media (min-width: 1200px) {
+}
+
+/* start Global Rules */
+
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Droid Sans', sans-serif;
+  height: 4000px;
+  margin: 0;
+}
+
+.centralize-vertical {
+  height: 100%;
+  width: 5px;
+  background-color: salmon;
+  position: fixed;
+  z-index: 1;
+  margin: 0 50%;
+}
+
+.centralize-horizontal {
+  height: 5px;
+  width: 100%;
+  background-color: salmon;
+  color: aqua;
+  position: fixed;
+  top: 50%;
+  z-index: 1;
+}
+
+/* end Global Rules */
+
+/* start Header */
+
+.header {
+  background: url(../images/Background-header-home.jpg) no-repeat top center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  min-height: 300px;
+  position: relative;
+  text-align: center;
+}
+
+.header .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.header .overlay h2 {
+  margin-top: 100px;
+}
+
+.header .overlay .plan {
+  border: white solid;
+  width: 48%;
+  margin-left: 1%;
+  margin-right: 1%;
+  padding: 20px;
+}
+
+.header .offer {
+  border: 4px solid #fff;
+  padding: 20px;
+  margin: 30px 1% 0;
+}
+
+/* Mobile Size  */
+@media (max-width: 767px) {
+}
+
+/* Small Size */
+@media (min-width: 768px) and (max-width: 991px) {
+}
+
+/* Medium Size */
+@media (min-width: 992px) and (max-width: 1199px) {
+  .visible-md {
+    display: block !important;
+  }
+}
+
+/* Large Size */
+@media (min-width: 1200px) {
+}
+
+/* end Header */
+
+/* start Features*/
+
+.features {
+  padding: 30px 50px;
+}
+
+.features .h1 {
+  font-size: 2em;
+}
+
+.features .feat {
+  width: 32%;
+  padding: 0 20px 0 0;
+}
+
+.features .feat h2 {
+  margin: 10px 0 8px;
+}
+
+.features .feat p {
+  margin: 0;
+  padding-right: 10px;
+  line-height: 1.5;
+}
+
+/*    Mobile Size  */
+@media (max-width: 767px) {
+  .features .feat {
+    width: 100%;
+    margin: 0 1% 0 0;
+  }
+  .features .feat h2 {
+    margin-bottom: 5px;
+    text-align: center;
+  }
+  .features .feat:nth-last-of-type(odd) {
+    background-color: #ddd;
+  }
+  .features .feat p {
+    text-align: center;
+  }
+}
+
+/*    Small Size */
+@media (min-width: 768px) and (max-width: 991px) {
+  .features .feat:first-of-type {
+    width: 100%;
+    text-align: center;
+    background-color: #ddd;
+  }
+  .features .feat:not(:first-of-type) {
+    width: 50%;
+    text-align: center;
+  }
+  .features .feat p {
+    text-align: center;
+  }
+}
+
+/*    Medium Size */
+@media (min-width: 992px) and (max-width: 1199px) {
+}
+
+/*    Large Size */
+@media (min-width: 1200px) {
+}
+
+/* end Features*/
+
+/* start About-Us*/
+
+.about-us {
+  background-color: bisque;
+  padding: 30px 0;
+}
+
+.about-us .h1 {
+  font-size: 40px;
+}
+
+.about-us .responsive-p {
+  color: cadetblue;
+}
+
+@media (max-width: 991px) {
+  .about-us .responsive-p {
+    text-align: center;
+  }
+}
+/* end About-Us*/
+
+/* Start Our-Work */
+
+.our-work {
+  /**/
+  background-color: seagreen;
+}
+.our-work .image {
+  /**/
+  margin-bottom: -5px;
+}
+
+/* Mobile Size  */
+@media (max-width: 767px) {
+  .our-work .image {
+    width: 100%;
+  }
+}
+
+/* Small Size */
+@media (min-width: 768px) and (max-width: 991px) {
+  .our-work .image {
+    width: 50%;
+  }
+}
+
+/* Medium Size */
+@media (min-width: 992px) and (max-width: 1199px) {
+  .our-work .image {
+    width: 33.3333%;
+  }
+}
+
+/* Large Size */
+@media (min-width: 1200px) {
+  .our-work .image {
+    width: 25%;
+  }
+}
+/* End Our-Work */
+
+/* Start Pricing-Plan */
+
+.pricing-table {
+  background-color: burlywood;
+  color: #fff;
+  padding: 20px 0 30px;
+}
+
+.pricing-table .h1 {
+  font-size: 45px;
+}
+
+.pricing-table .pricing-plan {
+  width: 32.6666%;
+  border: 3px solid #fff;
+  padding-bottom: 20px;
+}
+
+.pricing-plan:not(:first-of-type) {
+  margin-left: 1%;
+}
+
+.pricing-table .pricing-plan .pricing {
+  margin: 0 0 10px;
+  font-size: 22px;
+  display: inline-block;
+}
+
+/* Mobile Size  */
+@media (max-width: 767px) {
+  .pricing-table .pricing-plan {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+
+/* Small Size */
+@media (min-width: 768px) and (max-width: 991px) {
+  .pricing-table .pricing-plan {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+
+/* Medium Size */
+@media (min-width: 992px) {
+}
+
+/* Large Size */
+@media (min-width: 1200px) {
+}
+
+/* End Pricing-Plan */
+
+/* Start What They Say */
+
+.they-say {
+  padding: 20px 0;
+}
+
+.they-say .h1 {
+  font-size: 50px;
+  margin: 0 0 30px;
+}
+
+.they-say .person-say {
+  background-color: antiquewhite;
+  border: 3px solid blueviolet;
+  margin: 0 0 25px;
+  padding: 10px;
+}
+
+.they-say .person-say .image {
+  width: 100px;
+  margin-right: 20px;
+}
+
+/* .person-say .image:not(:first-of-type) {
+  margin-bottom: 40px;
+} */
+
+.they-say .person-say .image img {
+  border-radius: 50%;
+}
+
+.they-say .person-say .name {
+  font-size: 25px;
+  /* margin: 20px 0 0 0; */
+  margin: 5px 0 10px;
+
+  /* display: inline-block; */
+}
+
+.they-say .person-say p {
+  margin: 0;
+  font-size: 18px;
+  width: calc(100% - 120px);
+  display: flex;
+}
+
+/* Mobile Size  */
+@media (max-width: 767px) {
+}
+
+/* Small Size */
+@media (min-width: 768px) and (max-width: 991px) {
+}
+
+/* Medium Size */
+@media (min-width: 992px) {
+  .they-say .person-say:first-of-type {
+    width: 80%;
+    margin-left: 10%;
+  }
+
+  .they-say .person-say:not(:first-of-type) {
+    width: 49%;
+  }
+
+  .they-say .person-say:nth-of-type(2) {
+    margin-right: 2%;
+  }
+}
+
+/* Large Size */
+@media (min-width: 1200px) {
+  .they-say .person-say:not(:first-of-type) {
+    width: 39%;
+  }
+
+  .they-say .person-say:nth-of-type(2) {
+    margin-right: 2%;
+    margin-left: 10%;
+  }
+}
+/* End What They Say */
+
+/* start My Framework */
+
+.container {
+  margin: auto 11.493%;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.clearfix {
+  clear: both;
+}
+
+.float-left {
+  float: left;
+}
+
+.float-right {
+  float: right;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.visible-xs,
+.visible-sm,
+.visible-md,
+.visible-lg {
+  display: none;
+}
+
+.responsive-p {
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+.responsive-image {
+  width: 100%;
+}
+
+.classic-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+/* end My Framework */

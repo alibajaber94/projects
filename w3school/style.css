@@ -1,0 +1,38 @@
+#container
+{
+    height: 400px;
+    width: 400px;
+    background-color: bisque;
+    margin: auto;
+    padding: 20px;
+}
+
+#red
+{
+    background-color: red;
+    height: 70px;
+    width: 70px;
+    margin: 20px auto;
+    
+}
+
+#blue
+{
+    background-color: blue;
+    height: 70px;
+    width: 70px;
+    margin: 20px auto;
+}
+
+#green
+{
+    background-color: green;
+    height: 70px;
+    width: 70px;
+    margin: 20px auto;
+}
+
+#butt
+{
+    
+}
