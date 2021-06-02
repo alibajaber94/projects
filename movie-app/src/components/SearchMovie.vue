@@ -10,6 +10,10 @@
         Search
       </button>
     </label>
+    <div class="clearfix"></div>
+    <!-- start test -->
+
+    <!-- end test -->
   </div>
 </template>
 

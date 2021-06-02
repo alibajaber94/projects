@@ -1,3 +1,4 @@
+// import 'bootstrap';
 import "bootstrap-vue/dist/bootstrap-vue.css";
 // Import Bootstrap an BootstrapVue CSS files (order is important)
 // Import Bootstrap an BootstrapVue CSS files (order is important)
@@ -9,7 +10,6 @@ import App from "./App.vue";
 import router from "./router";
 import store from "./store";
 
-
 // Vue.use( PortalVue );
 
 // Make BootstrapVue available throughout your project
@@ -17,4 +17,4 @@ import store from "./store";
 // Optionally install the BootstrapVue icon components plugin
 // Vue.use( IconsPlugin );
 
-createApp( App ).use( store ).use( router ).mount( "#app" );
+createApp(App).use(store).use(router).mount("#app");
