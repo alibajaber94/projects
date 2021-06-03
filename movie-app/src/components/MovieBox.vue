@@ -1,5 +1,5 @@
 <template>
-  <div class="movie col-6">
+  <div class="a-movie col-6">
     <div class="img float-left">
       <img
         src="../../public/img/movie-poster-2.jpg"
@@ -81,13 +81,13 @@ export default {
 .float-left {
   float: left;
 }
-.movie-box {
+/* .movie-box {
   background-color: burlywood;
   padding: 10px;
   margin-bottom: 500px;
   box-sizing: border-box;
-}
-.movie {
+} */
+.a-movie {
   background-color: aquamarine;
   height: 450px;
   padding: 5px;
